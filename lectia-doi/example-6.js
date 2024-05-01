@@ -18,5 +18,17 @@ if(isLastCharacterSlashAndIncludesSubstring) {
 } else {
     link += '';
 }
-
 console.log(link);
+
+// varianta mea
+
+// debugger
+// let link = 'https://my-site.com/about';
+// const lastCharacter = link.charAt(link.length - 1);
+
+// if (lastCharacter === "/") {
+//     console.log(link)
+// } else if (lastCharacter !== "/" && link.includes("my-site")); {
+//     link = link + "/";
+//     console.log(link);
+// }

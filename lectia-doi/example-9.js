@@ -6,7 +6,7 @@ If it's 2 days before the deadline - output the string "The day after tomorrow"
 If it's 3+ days before the deadline - print the string "Date in the future"
 */
 
-const dayUntillDeadline = 33;
+const dayUntillDeadline = 2;
 
 if (dayUntillDeadline >= 0) {
   if (dayUntillDeadline === 0) {

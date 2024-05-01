@@ -4,8 +4,8 @@ Write a for loop that prints numbers in ascending order to the browser console
 from min to max, but only if the number is a multiple of 5.
 */
 
-const min = 10;
-const max = 100;
+const min = 1;
+const max = 76;
 
 for (let i = min; i <= max; i++) {
   if (i % 5 === 0) {

@@ -5,17 +5,17 @@ Write a script that checks if the value of the link variable ends symbol / . if 
 add this character to the end of the link value. Use if...else construction.
 */
 
-let link = 'https://my-site.com/about/';
+// let link = 'https://my-site.com/about/';
 
-// const varX = 'str'; // s pe pozitia 0 , t pe pozitia 1 , r pe pozitia 2
-// console.log(varX.length); // dar length = 3;
+// // const varX = 'str'; // s pe pozitia 0 , t pe pozitia 1 , r pe pozitia 2
+// // console.log(varX.length); // dar length = 3;
 
-const lastCharacter = link.charAt(link.length - 1);
-console.log("Ultimul caracter este: ", lastCharacter);
+// const lastCharacter = link.charAt(link.length - 1);
+// console.log("Ultimul caracter este: ", lastCharacter);
 
-if ( lastCharacter !== "/" ) {
-    link += '/';
-    //link = link + '/';
-}
+// if ( lastCharacter !== "/" ) {
+//     link += '/';
+//     //link = link + '/';
+// }
+// console.log(link);
 
-console.log(link);

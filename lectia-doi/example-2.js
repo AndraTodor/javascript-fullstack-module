@@ -9,15 +9,15 @@ is 0, then output the string "14 fix", without minutes.
 */
 
 const ore = 14;
-const minute = 26;
+const minute = 0;
 
 // console.log(`${ore} ore ${minute} minute.`)
 
 
-// if ( minute > 60 ) {
-//     console.log(`${ore} fix`);
-// } else {
-//     console.log(`${ore} ore ${minute} minute.`)
-// }
+if ( minute === 0 ) {
+    console.log(`${ore} fix`);
+} else {
+    console.log(`${ore} ore ${minute} minute.`)
+}
 
-minute === 0 ? console.log(`${ore} fix`) : console.log(`${ore} ore ${minute} minute.`);
+// minute === 0 ? console.log(`${ore} fix`) : console.log(`${ore} ore ${minute} minute.`);

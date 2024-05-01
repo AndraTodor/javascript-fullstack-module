@@ -1,15 +1,14 @@
 // // scope block 
 // // scope global
 
-// const value = 5;
+const value = 5;
 
-// if(true) {
-
-//     let valueBlock = 7;
-//     console.log("Din interiorul block-ului2", valueBlock); 
-//     console.log("Din interiorul block-ului", value); 
+if(true) {
+    let valueBlock = 7;
+    console.log("Din interiorul block-ului2", valueBlock); 
+    console.log("Din interiorul block-ului", value); 
     
-// }
+}
 
 // console.log("Din exteriorul block-ului", value)
 // console.log("Din exteriorul block-ului2", valueBlock)
