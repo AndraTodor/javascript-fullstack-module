@@ -6,17 +6,15 @@ if the user entered a number greater than zero in the prompt. If zero was entere
 output to the console the string "This is zero". If a negative number is passed, in
 the console should be the string "This is a negative number".*/
 
-
 const userInput = prompt("Introduceti numarul:");
 const number = Number(userInput);
 
-
-if ( number > 0 ) {
-    console.log("Numarul este pozitiv");
-} else if ( number < 0 ) {
-    console.log("Numarul este negativ")
-} else if ( number === 0 ){
-    console.log("Numarul este zero")
+if (number > 0) {
+  console.log("Numarul este pozitiv");
+} else if (number < 0) {
+  console.log("Numarul este negativ");
+} else if (number === 0) {
+  console.log("Numarul este zero");
 } else {
-    console.log("Introduce un numar");
+  console.log("Introduce un numar");
 }
