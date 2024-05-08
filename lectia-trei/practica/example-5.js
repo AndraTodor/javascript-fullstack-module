@@ -10,4 +10,19 @@ whitespace character. The script should work for any line.
 */
 
 const string = "    Welcome to the future";
-console.log(string);
+// console.log(string);
+
+const words = string.split(" ");
+console.log(words);
+
+//iteram array-ul de string-uri creat
+//verificam daca avem spatiu
+//cream un cuvant nou fara acest spatii de inceput
+
+let finalString = "";
+for (const word of words) {
+  if (word !== "") {
+    finalString += word + " ";
+  }
+}
+console.log(finalString.split(" "));
