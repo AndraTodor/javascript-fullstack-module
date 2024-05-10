@@ -9,3 +9,21 @@ guaranteed to be the same.
 
 ```
 */
+function printContactsInfo(names, phones) {
+  const arrayOfNames = names.split(",");
+  const arrayOfPhones = phones.split(",");
+
+  //   console.log(arrayOfNames);
+  //   console.log(arrayOfPhones);
+
+  for (let i = 0; i < arrayOfNames.length; i++) {
+    console.log(`${arrayOfNames[i]} - ${arrayOfPhones[i]}`);
+  }
+
+  //i=0 => arrayOfNames[0] - arrayOfPhones[0]
+}
+
+printContactsInfo(
+  "Jacob,William,Solomon,Artemis",
+  "89001234567,89001112233,890055566377,890055566300"
+);
