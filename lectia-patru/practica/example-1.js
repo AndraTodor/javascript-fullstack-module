@@ -10,3 +10,16 @@ as a decimal separator.
 
 Body mass index must be rounded to one decimal place;
 */
+
+function calcBMI(weight, height) {
+  const parsedWeight = Number(weight.replace(",", "."));
+  const parsedHeight = Number(height.replace(",", "."));
+
+  const result = parsedWeight / parsedHeight ** 2;
+
+  return result;
+}
+
+const bmi = calcBMI("88,3", "1.75");
+
+console.log(bmi); // 28.8
