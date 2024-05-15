@@ -25,3 +25,12 @@ console.log(array);
 
 logItems(["Mango", "Poly", "Ajax"]);
 logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
+
+// alta solutie
+function log(items) {
+  for (let i = 0; i < items.length; i++) {
+    console.log(`${i + 1} - ${items[i]}`);
+  }
+}
+const names = ["Andra", "Cristi"];
+log(names);

@@ -16,6 +16,7 @@ function findLargestNumber(numbers) {
   //   return max;
 
   return Math.max(...numbers);
+  // punctele ...sunt folosite pentru a raspandi elementele in functia Math.max(), ia ficare element individual si il trece prin functia Math.max
 }
 
 console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94

@@ -26,6 +26,7 @@ function addCourse(courseName) {
 }
 
 function removeCourse(courseName) {
+  // identificare curs de sters
   const courseIndex = courses.indexOf(courseName);
 
   if (courseIndex === -1) {
@@ -49,9 +50,9 @@ addCourse("Express");
 console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
 //addCourse("CSS"); // ' You already have this course'
 
-// removeCourse("React");
-// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-// removeCourse("Vue"); // 'Course with this name was not found'
+removeCourse("React");
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+removeCourse("Vue"); // 'Course with this name was not found'
 
 updateCourse("Express", "NestJS");
 console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']

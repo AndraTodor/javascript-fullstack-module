@@ -9,7 +9,7 @@ whitespace character. The script should work for any line.
 ```
 */
 
-const string = "    Welcome to the future";
+const string = "       Welcome to the future";
 // console.log(string);
 
 const words = string.split(" ");
