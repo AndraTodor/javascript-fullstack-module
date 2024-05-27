@@ -3,7 +3,7 @@
 
 Write the following functions:
 
-- `createProduct(obj, callback)` - accepts a product object without an id, and also
+- `createProduct(obj, callback)` - accepts a product object with an id, and also
   callback. The function creates a product object by adding a unique identifier to it in
   property `id` and calls the callback passing it the created object.
 - `logProduct(product)` - callback accepting a product object and logging it to
@@ -16,7 +16,13 @@ Write the following functions:
 
 */
 
-function createProduct(partialProduct, callback) {}
+function createProduct(partialProduct, callback) {
+  const product = {
+    id: "unique" + Date.now(),
+    ...partialProduct,
+  };
+  callback(product);
+}
 
 function logProduct(product) {
   console.log(product);

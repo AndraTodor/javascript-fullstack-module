@@ -1,25 +1,21 @@
-doSomething();
-// doOtherThing();
-// doSomethingArrow();
+//functie declaratie
 
 function doSomething() {
-    console.log('Something');
+  console.log("Something");
 }
 
 const doOtherThing = function () {
-    console.log('Something');
-}
+  console.log("Other Thing");
+};
 
-const doSomethingArrow = () => {
-    console.log('Something');
-    return 5;
-}
+//expresie de functie
+const doSomethingElse = () => {
+  console.log("Something Else Arrow");
+};
 
-doSomething();
+doSomethingElse();
 
-doOtherThing();
-doSomethingArrow();
+const result = doSomethingElse;
 
-const result = doSomethingArrow;
-console.log(result());
-console.log(result);
+console.log("referinta", result);
+console.log("Apelam", result());

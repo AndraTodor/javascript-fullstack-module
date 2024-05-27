@@ -33,12 +33,15 @@ const account = {
   },
 };
 
-function handleSuccess(message) {
+// Functiile arrow NU AU THIS, this-ul nu se comporta cum ar trebui sa se comporte intr-o functie normala
+// Asadar, NICIODATA NU FOLOSIM ARROW FUNCTIONS cand lucram cu metode ale unui obiect
+
+const handleSuccess = (message) => {
   console.log(`✅ Success! ${message}`);
-}
-function handleError(message) {
+};
+const handleError = (message) => {
   console.log(`❌ Error! ${message}`);
-}
+};
 
 account.withdraw(2000, handleSuccess, handleError);
 account.withdraw(600, handleSuccess, handleError);
