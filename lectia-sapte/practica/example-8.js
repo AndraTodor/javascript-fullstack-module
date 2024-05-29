@@ -5,14 +5,16 @@ Make the code refactoring using `forEach` method and arrow functions.
 
 ```js
 */
-
-function printContactsInfo({ names, phones }) {
+const printContactsInfo = ({ names, phones }) => {
   const nameList = names.split(",");
   const phoneList = phones.split(",");
-  for (let i = 0; i < nameList.length; i += 1) {
-    console.log(`${nameList[i]}: ${phoneList[i]}`);
-  }
-}
+  // for (let i = 0; i < nameList.length; i += 1) {
+  //   console.log(`${nameList[i]}: ${phoneList[i]}`);
+  // }
+  nameList.forEach((name, index) => {
+    console.log(`${name}: ${phoneList[index]}`);
+  });
+};
 
 printContactsInfo({
   names: "Jacob,William,Solomon,Artemis",

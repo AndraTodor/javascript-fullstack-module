@@ -19,7 +19,7 @@ const TRANSACTION_LIMIT = 1000;
 const account = {
   username: "Jacob",
   balance: 400,
-  withdraw: (amount, onSuccess, onError) => {
+  withdraw(amount, onSuccess, onError) {
     if (amount > TRANSACTION_LIMIT) {
       onError(`Amount should not exceed ${TRANSACTION_LIMIT} credits`);
     } else if (amount > this.balance) {

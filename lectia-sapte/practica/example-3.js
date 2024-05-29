@@ -13,14 +13,21 @@ of callback call.
 
 function each(array, callback) {
   const newArr = [];
+  debugger;
   for (const el of array) {
     newArr.push(callback(el));
   }
   return newArr;
 }
 
-console.log(
-  each([64, 49, 36, 25, 16], function (value) {
-    return value * 2;
-  })
-);
+function multiplyByThree(value) {
+  return value * 3;
+}
+
+console.log(each([1, 2, 3, 4, 5], multiplyByThree));
+
+// console.log(
+//   each([64, 49, 36, 25, 16], function (value) {
+//     return value * 2;
+//   })
+// );
