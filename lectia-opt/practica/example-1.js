@@ -7,6 +7,13 @@ cars.
 
 import { cars } from "./carsData.js";
 
-const getModels = (cars) => {};
+const getModels = (carsList) => {
+  if (carsList.length === 0) {
+    return console.error("Nu exista masini in acest obiect");
+  }
+
+  const newArr = carsList.map((item) => item.model);
+  return newArr;
+};
 
 console.table(getModels(cars));
