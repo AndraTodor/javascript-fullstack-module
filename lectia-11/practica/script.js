@@ -13,6 +13,28 @@ const technologies = ["Javascript", "Python", "CSS", "HTML"];
 
 const technologies = ["Javascript", "Python", "CSS", "HTML"];
 
+const containerEl = document.querySelector("#container");
+// console.dir(containerEl);
+const listEl = document.createElement("ul"); // <ul> </ul>
+// console.dir(listEl);
+containerEl.append(listEl);
+
+// const firstElementLi = document.createElement("li"); // <li> </li>
+// firstElementLi.textContent = technologies[0];
+// listEl.append(firstElementLi);
+
+// for (let i = 0; i < technologies.length; i++) {
+//   const li = document.createElement("li");
+//   li.innerText = technologies[i];
+//   listEl.append(li);
+// }
+
+technologies.forEach((technology) => {
+  const li = document.createElement("li");
+  li.innerText = technology;
+  listEl.append(li); // sau putem folosi prepend, dar o sa adauge valoarile in ordine inversa
+});
+
 /*
 # Task 2
 
@@ -26,25 +48,65 @@ Starting from this colors array, create buttons dynamically;
 
 const colors = [
   {
-    label: "Primary Button",
+    label: "Facebook",
     color: "#ff0000",
+    href: 'href="https://www.facebook.com/"',
+    isPrimary: true,
   },
   {
-    label: "Click Me",
+    label: "Instagram",
     color: "#00ff00",
+    href: 'href="https://www.instagram.com/"',
+    isPrimary: true,
   },
   {
     label: "Yellow",
     color: "#fff00f",
+    isPrimary: false,
+  },
+  {
+    label: "Click Me3",
+    color: "#00ff00",
+    href: 'href="https://www.facebook.com/"',
+    isPrimary: true,
+  },
+  {
+    label: "Click Me4",
+    color: "#00ff00",
+    href: 'href="https://www.facebook.com/"',
+    isPrimary: true,
   },
 ];
+
+colors.forEach((color) => {
+  const buttonEl = document.createElement("button"); // <button> </button>
+  containerEl.append(buttonEl);
+  // buttonEl.textContent = color.label;
+  // buttonEl.classList.add("primary-button");
+
+  if (color.isPrimary) {
+    buttonEl.innerHTML = `<span><a ${color.href} target="_blank" >${color.label}</a></span>`;
+    buttonEl.classList.add("primary-button");
+  } else {
+    buttonEl.textContent = color.label;
+    buttonEl.style.backgroundColor = color.color;
+  }
+});
 
 /**
  * Test Example
  */
+const testQuerySelector = document.querySelector("#container");
 
-// console.dir(testQuerySelector);
-// console.dir(testQuerySelectorAll[0]);
-// console.dir(testElementById);
-// console.dir(testElementByClass[0]);
-// console.dir(testElementByTag);
+const testElementByTag = document.getElementsByTagName("img"); // <img>
+
+const testQuerySelectorAll = document.querySelectorAll("#container");
+const divContainer = testQuerySelectorAll[1];
+
+const testElementById = document.getElementById("container");
+
+const testElementByClass = document.getElementsByClassName("container");
+//console.dir(testQuerySelector);
+//console.dir(testElementById);
+// console.dir(testElementByClass);
+//console.dir(testElementByTag);

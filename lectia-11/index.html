@@ -22,7 +22,9 @@
         <li>Ierarhia elementelor DOM</li>
         <li>Căutarea elementelor DOM cu querySelector</li>
         <li>Proprietatea textContent</li>
-        <li id="red" class="firstClass secondClass">Lucrul cu classList și atribute</li>
+        <li id="red" class="firstClass secondClass">
+          Lucrul cu classList și atribute
+        </li>
         <li>Crearea elementelor</li>
         <li>Inserarea elementelor: append, prepend, before și after</li>
         <li>Eliminare prin metoda de eliminare</li>
@@ -41,10 +43,11 @@
     </main>
     <script defer>
       function makeTextRed() {
-        const redElem = document.querySelector("#red");
-        redElem.classList.add("red");
+        const redElem = document.querySelector("#red"); // preluat elementul cu id-ul red -> obiectul nostru extras din DOM
         console.dir(redElem);
-        redElem.textContent = "Acest text a fost schimbat dinamic";
+        redElem.classList.add("red"); // am adaugat clasa cu numele "red"
+        console.dir(redElem);
+        redElem.innerHTML = "Acest text a fost schimbat dinamic"; // am zis aici ca mai folosi textContent,innerHTML,innerText
         console.log(redElem);
       }
     </script>
