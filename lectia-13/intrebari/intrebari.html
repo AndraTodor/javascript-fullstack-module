@@ -42,33 +42,16 @@
       }
     </style>
   </head>
-  <body> 
+  <body>
     <div class="panel">
-      <div class="panel-header"> Produs - Mai multe informatii
+      <div class="panel-header">
+        Produs - Mai multe informatii
         <span class="panel-header-icon"><</span>
-        <button class="btn btn-primary"> Sterge</button>
+        <button class="btn btn-primary">Sterge</button>
       </div>
       <div class="panel-body">First comment</div>
     </div>
 
-    <script>
-
-      const panelHeaderEl = document.querySelector('.panel-header')
-      const panelBodyEl = document.querySelector('.panel-body')
-      const buttonEl = document.querySelector('.btn.btn-primary')
-      const panelIconEl = document.querySelector('.panel-header-icon')
-
-      buttonEl.addEventListener('click', () => {
-        console.log('Sterge produs')
-        panelBodyEl.remove();
-      })
-
-      panelHeaderEl.addEventListener('click', () => {
-        const isVisible = panelBodyEl.classList.contains('is-visible');
-        panelIconEl.innerHTML = isVisible ? '>' : 'x';
-        panelBodyEl.classList.toggle('is-visible')
-      })
-
-    </script>
+    <script></script>
   </body>
 </html>
