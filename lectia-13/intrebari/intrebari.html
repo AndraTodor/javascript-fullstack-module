@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intrebari</title>
+    <style>
+      .panel {
+        background: lightblue;
+        border: 1px solid #77939c;
+      }
+
+      .panel-header {
+        background: #5656aa;
+        padding: 16px 8px;
+        color: white;
+        user-select: none;
+      }
+
+      .panel-header-icon {
+        display: inline-flex;
+        height: 20px;
+        width: 20px;
+        background: white;
+        color: black;
+        font-weight: bold;
+        border: 1px solid lightblue;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .panel-body {
+        padding: 16px 8px;
+        display: none;
+      }
+
+      .is-visible {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="panel-header">
+        Produs - Mai multe informatii
+        <span class="panel-header-icon"><</span>
+        <button class="btn btn-primary">Sterge</button>
+      </div>
+      <div class="panel-body">First comment</div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
