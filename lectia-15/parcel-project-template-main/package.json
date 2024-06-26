@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://SilviuGOIT.github.io/javascript-fullstack-module",
+  "homepage": "https://SilviuGOIT.github.io/javascript-fullstack-module/lectia-15/parcel-project-template-main",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /javascript-fullstack-module/lectia-15/parcel-project-template-main"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SilviuGOIT/javascript-fullstack-module.git"
+    "url": "git+https://github.com/SilviuGOIT/javascript-fullstack-module/lectia-15/parcel-project-template-main.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
