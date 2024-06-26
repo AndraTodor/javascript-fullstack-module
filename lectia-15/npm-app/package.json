@@ -1,0 +1,14 @@
+{
+  "name": "my-app",
+  "version": "0.0.1",
+  "description": "Prima aplicatie npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Acest script merge\"'"
+  },
+  "author": "Silviu",
+  "license": "ISC",
+  "dependencies": {
+    "simplelightbox": "^2.14.3"
+  }
+}
