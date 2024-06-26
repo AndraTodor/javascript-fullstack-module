@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://SilviuGOIT.github.io/javascript-fullstack-module/lectia-15/parcel-project-template-main",
+  "homepage": "https://SilviuGOIT.github.io/javascript-fullstack-module/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /javascript-fullstack-module/lectia-15/parcel-project-template-main"
