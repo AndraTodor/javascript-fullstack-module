@@ -62,7 +62,7 @@ data.quantity = quantityEl.getAttribute("value");
 data.price = priceEl.getAttribute("value");
 totalEl.textContent = data.calcTotalPrice() + " USD";
 
-formEl.addEventListener("change", (e) => {
+const handler = (e) => {
   //se poate folosi pentru acest usecase se poate folosi si input
   if (e.target === priceEl) {
     if (!Number(priceEl.value)) {
@@ -77,7 +77,10 @@ formEl.addEventListener("change", (e) => {
     console.log(`Cantitatea curenta are valoarea ${quantityEl.value}`);
     data.quantity = quantityEl.value;
   }
+};
+amountDisplayEl.textContent = quantityEl.value;
+totalEl.textContent = data.calcTotalPrice() + " USD";
 
-  amountDisplayEl.textContent = quantityEl.value;
-  totalEl.textContent = data.calcTotalPrice() + " USD";
-});
+formEl.addEventListener("change", handler);
+
+setTimeout(formEl.removeEventListener("change", handler), 10000);
